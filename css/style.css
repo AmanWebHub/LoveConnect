@@ -1,0 +1,49 @@
+/* style.css */
+.gradient-background {
+  background: linear-gradient(300deg, #ff6b6b, #4ecdc4, #ffe66d);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.icon-square {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.card {
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+#testimonial {
+  background-color: #f8f9fa;
+}
+
+#pricing .card-header {
+  background-color: white;
+  border-bottom: none;
+}
+
+#features i {
+  font-size: 1.5rem;
+}
